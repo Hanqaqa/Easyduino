@@ -1,0 +1,232 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bb372b69-9279-4b34-b319-2dd42bd181ea")
+	(paper "A4")
+	(lib_symbols)
+	(text "ESP32 WROOM 32E\n\n\n\n"
+		(exclude_from_sim no)
+		(at 28.575 71.12 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "01357e7b-4b07-4d84-8bb2-394b5bc85260")
+	)
+	(text "CP2102\n\n"
+		(exclude_from_sim no)
+		(at 29.845 148.59 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "01a2c4b5-d741-4f3d-8b79-b9fd4b65b619")
+	)
+	(text "AMS1117-3.3V"
+		(exclude_from_sim no)
+		(at 29.21 168.275 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "03222495-85d1-4749-839a-ba4564e9d43a")
+	)
+	(text "References:\n\n\n"
+		(exclude_from_sim no)
+		(at 21.59 62.865 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e966db2-e3c4-4d13-a42b-97cfee321112")
+	)
+	(text "Automatic Bootloader:\n\n\n"
+		(exclude_from_sim no)
+		(at 36.195 88.9 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "58bdf5c2-c9a1-4920-a26c-43dcb06e38e3")
+	)
+	(text "Decoupling capacitors:\n\n\n"
+		(exclude_from_sim no)
+		(at 35.56 69.215 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "913cef37-e9aa-4066-bed2-96d5fb314244")
+	)
+	(text "ESP32 Wroom 32 E datasheet p24 -> 3.3V pin needs one 22uF and one 100nF capacitors\n\nESP32 Devkit sch -> EN pin 10k resistor and 100nF capacitor\n\nESP32 Wroom 32 E datasheet p26 -> GND Thermal needs vias between pads. Needed vias are too small for my manufacturer. I will use bigger vias\n\nESP32 Devkit sch -> Automatic Bootloader.\n"
+		(exclude_from_sim no)
+		(at 37.465 85.725 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "95775086-63d6-410b-a7cb-9e187d4770b9")
+	)
+	(text "CP2102 datasheet p15 -> VBUS will be tied to REGIN. 1uF and 100 nF will be added.\nCP2102 datasheet p15 -> ESD Supression Diode for all three inputs of USB  \nCP2102 datasheet p15 and p19 -> 100nF for VDD output, 4.7 uF is optional for higher current circuits.\nCP2102 datasheet p23 -> The VDD or 3.3 output can only provide 100mA. I will not use this as a voltage provider for the ciruit. I will use the AMS1117-3.3 \nCP2102 datasheet p15 -> RST and SUSPEND resistors are not present. Might produce bad results due to noise"
+		(exclude_from_sim no)
+		(at 37.465 161.29 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3a80b17-ff54-4c10-a24e-f68966c5e7c2")
+	)
+	(text "Filtering:\n\n\n"
+		(exclude_from_sim no)
+		(at 35.56 105.41 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c790b209-0bb9-40bf-92e8-8de6062bbcf8")
+	)
+	(text "Input Voltage: 5V-15V(External Source 5V Pin) 5V (USB) or 3.3V (3.3V Pin). ONLY USE ONE VOLTAGE INPUT AT A TIME\nOutput Current at 3.3V : 1 A (External Source) 500mA (USB)\nNo Polarity Protection (External Source)\nOvercurrent Protection: None "
+		(exclude_from_sim no)
+		(at 28.575 35.56 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7d711c7-422d-4c95-b4c2-d04932aa406b")
+	)
+	(text "USB C\n\n"
+		(exclude_from_sim no)
+		(at 28.575 99.06 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9ffaaf5-1513-4b98-9d64-de0659eeed35")
+	)
+	(text "Specs:\n\n"
+		(exclude_from_sim no)
+		(at 24.765 25.4 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0e9717b-0df5-4424-a495-cd870552e445")
+	)
+	(text "Differential pair:\n\n\n"
+		(exclude_from_sim no)
+		(at 36.83 120.65 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d238b247-8871-4d85-893b-1e5e823b2dd3")
+	)
+	(text "USB needs 90 Ohm differential traces. \nAccording to JLCPCB impedance calculator, with a JLC7628 prepreg and 6mil (0.15mm) space between lines\nI have to use 9 mil tracks -> 0.2mm. With a ground layer below\nFor USBC I will use a very short trace for D+ D- (around 2mm, very short, lower than critical length)\nThe Development board from ESP32 has no problem with these tracks despite being a 2 board layer and USB Data tracks too thin\nI have to place vias because of the pinout of USB C and CP2102. Some other people have placed vias without problems for signal integrity\n"
+		(exclude_from_sim no)
+		(at 39.37 133.985 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9a22e0e-bf13-4790-bbd6-b33299d41a19")
+	)
+	(text "USB Hardware Design Guidelines for FTDI ICs p8 -> 10nF Cap + Ferrite Bead + 100nF Cap + 4.7uF Cap\nI disregarded such heavy filtering for the easier to implement 1uF and 100nF cap given in the CP2102 datasheet\n"
+		(exclude_from_sim no)
+		(at 38.735 106.045 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "dab03975-9b1a-4934-95c9-631c37719e3f")
+	)
+	(text "Enable pin (EN):\n\n\n"
+		(exclude_from_sim no)
+		(at 35.56 75.565 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f557d8e3-b2bc-441f-b772-f14339cc4d16")
+	)
+	(text "Thermal pad:"
+		(exclude_from_sim no)
+		(at 35.56 75.565 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f966801e-51a6-41f9-a130-e98a7727dbe6")
+	)
+	(text "AMS1117 Datasheet p1 -> 3.3V/1A Output with 5-15V Input\nAMS1117 Datasheet p4 -> 22uF tantalum capacitor on input and output.\n"
+		(exclude_from_sim no)
+		(at 36.83 175.895 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdec431d-a70f-4f71-81dc-64e42e846bb3")
+	)
+)

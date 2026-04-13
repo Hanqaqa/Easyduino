@@ -1,0 +1,197 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "da2d39db-f9d1-4072-8b97-f3ebd38859e7")
+	(paper "A4")
+	(lib_symbols)
+	(text "USB C\n\n"
+		(exclude_from_sim no)
+		(at 15.24 128.905 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "128ddf8f-97db-4db0-9d91-6df43f1fd59f")
+	)
+	(text "Specs:\n\n"
+		(exclude_from_sim no)
+		(at 13.335 24.765 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fef9119-3319-494f-9e18-955220916f82")
+	)
+	(text "\nSTM32F103x8 Datasheet p36 -> one 100nF decoupling capacitor per VDD pin except one 4.7uF capacitor in VDD3. I will use a 1uF capacitor in VDD3 to save costs\nSTM32F103x8 Datasheet p36 -> one 10nF decoupling capacitor plus a 1uF capacitor for VDDA. I will not be needing very precise analog measurements. I will only use a 100nF capacitor\n\nSTM32F103x8 Datasheet p54 -> PC14 PC15 use a 32.768 KHz resonator with approximately 15pF capacitors on each side. I will use 18pF\nSTM32F103x8 Datasheet p52 -> PD0 PD1 use 8MHz crystal. Use 5-25 pF capacitors on each side. I will use 18pF\n\nSTM32F103x8 Datasheet p 73-> No info about USB Data lines resistors. USB_D+ must be pulled up to 3.3 via 1.5k \nBluepill Schematic -> 20 Ohm USB Data lines terminator and a 4.7k pull up resistor\nBlackpill Schematic -> 10 Ohm USB Data lines terminator and a no pull up resistor\nI will trust the datasheet and not place resistors in USB lines and pull up to 3.3V. The Bluepill schematic is probably badly designed\n\nSTM32F103x8 Datasheet p67 -> NRST is connected to a switch and 100nF cap\nBluepill Schematic -> 10k resistor and 100nF cap\nF031K6 Schematic -> NRST connected to a switch and 100nF cap\nAgain I will trust the datasheet\n\nSTM32F103x8 Hardware Development p16 -> Normally HIGH via a 10k resistor \nBluepill Schematic -> 100k resistors for both Boot0 and Boot1.\nBlackpill Schematic -> Boot1 tied to GND via 10k resistor. Boot0 tied to GND via 10k resistor and a push button to 3.3V\nThe Blackpill and the Hardware Development guide agree. So i will place the 10k resistor and add a push button to Boot0"
+		(exclude_from_sim no)
+		(at 24.13 119.38 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f7bff78-cee9-4c4f-b0a0-17319b1357ed")
+	)
+	(text "References:\n\n\n"
+		(exclude_from_sim no)
+		(at 11.43 54.61 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f1b7d00-492a-4904-8c47-f4fdeee173ea")
+	)
+	(text "USB\n"
+		(exclude_from_sim no)
+		(at 20.955 73.66 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fd55855-d9c2-4a26-86bf-83aa482542e5")
+	)
+	(text "XC6206_Torex Datasheet p6 -> Two 1 uF ceramic capacitors on Vin and Vout"
+		(exclude_from_sim no)
+		(at 22.86 159.385 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "64dc42c3-ccf5-4d98-a477-9741ddc64e7d")
+	)
+	(text "USB needs 90 Ohm differential traces. \nAccording to JLCPCB impedance calculator, with a JLC7628 prepreg and 6mil (0.15mm) space between lines\nI have to use 9 mil tracks -> 0.2mm. With a ground layer below\nI have to place vias because of the pinout of USB C. Some other people have placed vias without problems for signal integrity\n"
+		(exclude_from_sim no)
+		(at 26.035 142.875 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e6d8f8d-7f8f-45d9-80f2-b8671620539d")
+	)
+	(text "Input Voltage: 5.5V-9V(External Source through 5V pin) or 5V (USB). ONLY USE ONE VOLTAGE INPUT AT A TIME\nMaximum Output Current at 5V input : 200 mA at 3.3V output\nNo Polarity Protection (External Source)\nOvercurrent Protection: None "
+		(exclude_from_sim no)
+		(at 17.145 34.925 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f3804b2-bfc0-49d8-8348-8a3f28e1b1c3")
+	)
+	(text "Boot0 and Boot1:\n\n\n"
+		(exclude_from_sim no)
+		(at 20.955 113.03 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "80100f72-2ab6-47a1-b86e-309d225caab6")
+	)
+	(text "XC6206P332MR-3.3V"
+		(exclude_from_sim no)
+		(at 15.24 154.94 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cc5f07d-7f7c-4b68-9095-07d97371e23c")
+	)
+	(text "Crystals\n"
+		(exclude_from_sim no)
+		(at 20.955 64.135 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3bf0b19-5290-4a99-ac77-36f8c5340dfe")
+	)
+	(text "Decoupling Capacitors\n"
+		(exclude_from_sim no)
+		(at 20.32 54.61 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d759dab9-3841-40d9-8802-ab34fe0bfae4")
+	)
+	(text "NRST\n\n"
+		(exclude_from_sim no)
+		(at 20.955 93.98 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9641e91-c705-4af1-b7f6-abc782db9562")
+	)
+	(text "STM32F103C8T6\n\n"
+		(exclude_from_sim no)
+		(at 18.415 53.975 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0d5a5c6-14fe-432b-8a3c-6a6888559201")
+	)
+	(text "Differential pair:\n\n\n"
+		(exclude_from_sim no)
+		(at 23.495 135.255 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f48d9488-f9e7-4f2c-aeda-ccb5f22fdeaa")
+	)
+)

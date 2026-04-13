@@ -1,0 +1,289 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "18f2cc90-d844-4fba-963c-3d04da054660")
+	(paper "A4")
+	(lib_symbols)
+	(text "AREF:\n\n"
+		(exclude_from_sim no)
+		(at 28.575 97.79 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "008dfb04-1540-4f1d-94ac-e2dcbbb5594b")
+	)
+	(text "References:\n\n\n"
+		(exclude_from_sim no)
+		(at 14.605 59.69 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ad91adc-7e49-4192-a43a-22c47ece72d4")
+	)
+	(text "Atmega328 Reference Manual p213 -> 10uH ferrite bead and 100nF. \nThe Analog tracks aren't critical. I won't create an analog ground for these tracks.\nI also won't add the 10 uH ferrite\n\n"
+		(exclude_from_sim no)
+		(at 30.48 93.345 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b023ffe-51a3-421b-b787-d7ebf707d5e8")
+	)
+	(text "Atmega Hardware Design Considerations p7,p8 -> 10kR and 330R for switch. The 100nF capacitor is not used for Arduino (Produces errors with DTR)\nThe 100nF capacitor on DTR (CP2102) is used for tricking the Atmega into Bootloader mode\n\n\n"
+		(exclude_from_sim no)
+		(at 29.845 73.66 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f9f0a5d-7578-4c7a-a8fa-92d7d52bb1dc")
+	)
+	(text "Atmega328p\n\n\n"
+		(exclude_from_sim no)
+		(at 21.59 63.5 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d743906-fc14-425e-b7a6-3cdea125b800")
+	)
+	(text "Specs:\n\n"
+		(exclude_from_sim no)
+		(at 17.78 22.225 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d614f43-c905-4ce3-9a94-913d7021f3dc")
+	)
+	(text "CP2102\n\n"
+		(exclude_from_sim no)
+		(at 23.495 150.495 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "509f9fed-e88e-4def-8ac5-8bd88bbd81b1")
+	)
+	(text "90 Ohm differential traces. \nAccording to JLCPCB impedance calculator, with a JLC7628 prepreg and 6mil (0.15mm) space between lines\nI have to use 9 mil tracks -> 0.2 mm\nI will use a very short trace for D+ D- (around 2mm)\nI have to place vias because of the pinout of USB C and CP2102. Some other people have done it with no problems\n"
+		(exclude_from_sim no)
+		(at 31.115 141.605 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e1f426b-86ab-4835-82db-54cc5ba4dae9")
+	)
+	(text "5V autoselector"
+		(exclude_from_sim no)
+		(at 22.225 180.975 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f5ead15-5c64-4d9e-a6f1-3988ff65c3b3")
+	)
+	(text "Filtering:\n\n\n"
+		(exclude_from_sim no)
+		(at 28.575 116.205 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "84c8879d-a2e5-4ec9-9cd9-b2ef5ce2ac9f")
+	)
+	(text "If USB is present and no external input voltage. The USB will power the ATMEGA\nIf USB is present and there is external input voltage. The external voltage will power the ATMEGA\nIf USB is not present and there is external input voltage. The external voltage will power the ATMEGA. The 3.3V output won't work"
+		(exclude_from_sim no)
+		(at 30.48 191.77 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fb350dd-1c24-42e9-acf9-6afb105f52fc")
+	)
+	(text "XC6206P\n"
+		(exclude_from_sim no)
+		(at 22.225 168.91 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "90ce8e9e-9b65-41ed-bd40-2442af03249f")
+	)
+	(text "Crystal:\n\n\n"
+		(exclude_from_sim no)
+		(at 27.305 77.47 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "937820be-6ce5-4add-bfd9-bbbd802c554d")
+	)
+	(text "Reset:\n\n\n"
+		(exclude_from_sim no)
+		(at 26.67 66.675 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ae59f1a-1c1c-4b67-a6f8-2b88cec06225")
+	)
+	(text "CP2102 datasheet p15 -> 1uF and 100nF for REGIN and VBUS\nCP2102 datasheet p15 -> 100nF for VDD output, 4.7 uF is optional for higher current circuits.\nCP2102 datasheet p23 -> The VDD or 3.3 output can only provide 100mA \nCP2102 datasheet p23 -> Logic levels go up to 3.3 V, but Atmega328p is able to understand them. Despite being 5V\nCP2102 datasheet p15 -> RST and SUSPEND resistors have not been placed. Might produce bad results due to noise"
+		(exclude_from_sim no)
+		(at 31.115 163.195 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a69658ed-ffac-40de-9fca-0e4f386b7708")
+	)
+	(text "AVCC:\n\n"
+		(exclude_from_sim no)
+		(at 27.94 83.185 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "aec93952-390d-4bdf-b35e-e83a26223718")
+	)
+	(text "Atmega Hardware Design Considerations p6 -> 100nF\n\n"
+		(exclude_from_sim no)
+		(at 31.115 102.235 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7735f57-09f8-442b-962a-f5a322b3de97")
+	)
+	(text "USB C\n\n"
+		(exclude_from_sim no)
+		(at 21.59 109.855 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3521e64-3b8a-425b-b86a-c875079f5df3")
+	)
+	(text "Differential pair:\n\n\n"
+		(exclude_from_sim no)
+		(at 29.845 131.445 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "da0fa5a5-ab94-47e9-bebe-569c47e1f3c1")
+	)
+	(text "USB Hardware Design Guidelines for FTDI ICs p8 -> 10nF Cap + Ferrite Bead + 100nF Cap + 4.7uF Cap\nI disregarded such heavy filtering for the easier to implement 1uF and 100nF cap given in the CP2102 datasheet\nI added a polyfuse with Ihold=500mA and Itrip=1A.\n"
+		(exclude_from_sim no)
+		(at 31.75 120.015 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "df3efc1a-b3af-4b1f-a0bb-ce8561176de5")
+	)
+	(text "Atmega Hardware Design Considerations p16 -> 22pf\n\n"
+		(exclude_from_sim no)
+		(at 29.845 78.105 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e050652e-27f0-4147-8fc0-f230daf99265")
+	)
+	(text "Input Voltage: 5.5V-9V(External Source Vin) 5V (USB). Both can be used at the same time. Preferable to only power from one source\nOutput Current: 250 mA (External Source) 500mA (USB)\n3.3V Output Current: None (External Source) 100 mA (USB)\nNo Polarity Protection (External Source)\nOvercurrent Protection: None (External Source) 1A (USB)\n5V Autoselector: can take both USB and external source. A diode will avoid short circuit. \nExternal input Polarity Protection: None!! "
+		(exclude_from_sim no)
+		(at 21.59 41.275 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec9868d6-c786-4769-9946-1bcaac0437b1")
+	)
+	(text "XC6206 Torex Datasheet p1 -> 1uF ceramic capacitor on input and output. 7V Maximum operating Voltage\nXC6206 UWM Datasheet p2 -> 1uF ceramic capacitor on the input and output. 9V Maximum operating Voltage"
+		(exclude_from_sim no)
+		(at 29.845 176.53 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f434a2f7-a069-42e2-abac-ed6efa51462a")
+	)
+)

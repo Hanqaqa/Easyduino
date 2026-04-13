@@ -1,0 +1,313 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "1f23bd19-6d62-4b4c-abbd-bef6566e8ad6")
+	(paper "A4")
+	(lib_symbols)
+	(text "Specs:\n\n"
+		(exclude_from_sim no)
+		(at 12.065 22.225 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "1529602a-78a6-4b7f-bf5e-3d242e1d9cb6")
+	)
+	(text "Atmega328p\n\n\n"
+		(exclude_from_sim no)
+		(at 19.05 64.135 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "326eaf81-462e-4517-abb8-7f9d63208d9d")
+	)
+	(text "90 Ohm differential traces. \nAccording to JLCPCB impedance calculator, with a JLC7628 prepreg and 6mil (0.15mm) space between lines\nI have to use 9 mil tracks -> 0.2 mm\nI will use a very short trace for D+ D- (around 2mm)\n"
+		(exclude_from_sim no)
+		(at 27.305 144.78 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ad27ffb-10bf-4248-a05c-0523b3a52c87")
+	)
+	(text "CH340C\n\n"
+		(exclude_from_sim no)
+		(at 20.955 154.94 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4539d4e0-a79a-4430-89c0-a4d7d0188879")
+	)
+	(text "Atmega328 Reference Manual p213 -> 10uH ferrite bead and 100nF\nThe Analog tracks aren't critical. I won't create an analog ground for these tracks\n\n"
+		(exclude_from_sim no)
+		(at 27.94 90.805 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b21a382-a221-4c3c-8497-0bcbbfc0256b")
+	)
+	(text "Filtering:\n\n\n"
+		(exclude_from_sim no)
+		(at 24.13 121.92 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ee664b6-870f-4824-9147-6f2fe14a3679")
+	)
+	(text "Atmega Hardware Design Considerations p12\n"
+		(exclude_from_sim no)
+		(at 27.94 95.885 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "5411b172-8cac-4909-adbb-714936580f87")
+	)
+	(text "AMS1117\n"
+		(exclude_from_sim no)
+		(at 21.59 165.1 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c72a813-3ebc-4700-adfb-14e1b04d61af")
+	)
+	(text "ICSP Connector:\n\n"
+		(exclude_from_sim no)
+		(at 26.035 95.25 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "6257d62f-033e-4ea7-be19-461dec8c2702")
+	)
+	(text "References:\n\n\n"
+		(exclude_from_sim no)
+		(at 12.065 60.325 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c4f12e4-a1c0-46e8-8afb-9ebfacee85b4")
+	)
+	(text "If USB is present and no external input voltage. The USB will power the ATMEGA\nIf USB is present and there is external input voltage. The external voltage will power the ATMEGA\nIf USB is not present and there is external input voltage. The external voltage will power the ATMEGA"
+		(exclude_from_sim no)
+		(at 29.21 196.215 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ccd7522-b2c0-4162-8de3-e6818591d30c")
+	)
+	(text "AVCC:\n\n"
+		(exclude_from_sim no)
+		(at 25.4 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "70a7e81d-e9ac-4512-8ea7-e88896cec690")
+	)
+	(text "USB Hardware Design Guidelines for FTDI ICs p8 -> 10nF Cap + Ferrite Bead + 100nF Cap + 4.7uF Cap\nI disregarded such heavy filtering for the easier to implement 100nF cap given by the CH340 datasheet\nI added a polyfuse with I hold 500mA and Itrip 1A\n"
+		(exclude_from_sim no)
+		(at 27.305 125.73 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "71e12d94-aa5e-464c-b401-7df5318efcce")
+	)
+	(text "Reset:\n\n\n"
+		(exclude_from_sim no)
+		(at 24.13 67.31 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f73f861-5e85-48d7-8250-752f86ae3340")
+	)
+	(text "Differential pair:\n\n\n"
+		(exclude_from_sim no)
+		(at 25.4 137.16 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "85ce2fd5-9696-49c3-9307-eafbb6679485")
+	)
+	(text "Crystal:\n\n\n"
+		(exclude_from_sim no)
+		(at 24.765 78.74 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "863fcff3-40c4-46ac-919b-8fbcb2ea2510")
+	)
+	(text "USB C\n\n"
+		(exclude_from_sim no)
+		(at 19.05 115.57 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "90444ee1-323e-469f-91f1-da78ff9e78ad")
+	)
+	(text "Atmega Hardware Design Considerations p6 -> 100nF\n\n"
+		(exclude_from_sim no)
+		(at 28.575 107.95 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b8009d5-a572-4689-a976-819f0f7ec017")
+	)
+	(text "5V autoselector"
+		(exclude_from_sim no)
+		(at 20.955 185.42 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0cadeec-757b-49f9-b68f-7a17257dd84e")
+	)
+	(text "Ch340 Datasheet: p10 -> 100nF between GND and V3.\nCh340 Datasheet: p10 -> 100nF between GND and Vcc. Vcc to Vusb"
+		(exclude_from_sim no)
+		(at 29.21 158.115 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2ea944f-1125-487b-b67c-2951b5001e49")
+	)
+	(text "Atmega Hardware Design Considerations p7,p8 -> 10kR, 100nF cap and 330R for switch. The 100nF is not used in Arduino (produces erors with DTR)\nThe 100nF capacitor on DTR (CH340C) is used for tricking Arduino into Bootloader mode, it produces a voltage spike.\n\n"
+		(exclude_from_sim no)
+		(at 27.305 71.12 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9a841e3-8257-43f1-a948-3462ccad7823")
+	)
+	(text "AREF:\n\n"
+		(exclude_from_sim no)
+		(at 26.035 104.775 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3150337-a7f3-419d-8cdf-db3557738112")
+	)
+	(text "AMS1117 p4 -> 22uF tantalum capacitor on output\nLMS1117 p16-> 10uF tantalum capacitor the input. I will use a 22uF to reuse the same capacitor\nI will reuse the output capacitor of AMS1117-5V to be the output capacitor of AMS1117-3.3V"
+		(exclude_from_sim no)
+		(at 29.21 175.26 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c56dc02f-1d2e-47b6-90c7-e3674b4873ce")
+	)
+	(text "Input Voltage: 6.5V-15V(External Source Vin) 5V (USB). Both can be used at the same time.\n5V Output Current: 1A (External Source) 500mA (USB)\n3.3V Output Current: 500mA (External Source) 250 mA (USB)\nPolarity Protection (External Source) diode D2\nOvercurrent Protection: None (External Source) 1A (USB)\n5V Autoselector: can take both USB and external source. A diode will avoid short circuit\nExternal Input Polarity protection: A diode will protect the circuit from a wrongly inserted battery. "
+		(exclude_from_sim no)
+		(at 15.875 41.275 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca8122e4-1c98-483c-a9b4-6f4dbc2406e5")
+	)
+	(text "Atmega Hardware Design Considerations p16, p19 -> 22pf for 16 MHz\n\n"
+		(exclude_from_sim no)
+		(at 27.305 79.375 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2971d85-a25d-4eeb-bea5-10f097003c3e")
+	)
+)

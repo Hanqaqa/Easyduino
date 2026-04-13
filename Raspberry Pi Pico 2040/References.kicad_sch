@@ -1,0 +1,180 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8bf78e14-26cc-42b4-b490-f2827b5c9596")
+	(paper "A4")
+	(lib_symbols)
+	(text "XC6206P332MR-3.3V"
+		(exclude_from_sim no)
+		(at 24.13 145.415 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "43566301-d790-4f07-9dbf-0688c773c7cc")
+	)
+	(text "Differential pair:\n\n\n"
+		(exclude_from_sim no)
+		(at 31.75 107.315 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "45047293-9145-4859-b550-7201ff287e47")
+	)
+	(text "Differences with Original Raspberry Pi Pico"
+		(exclude_from_sim no)
+		(at 24.13 156.21 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "47cdf7cd-c003-475b-af8b-11243518530c")
+	)
+	(text "W25Q16JVUXIQ"
+		(exclude_from_sim no)
+		(at 23.495 123.19 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "48e99a52-92bb-4b10-b766-d76d6c9b8cf9")
+	)
+	(text "RP2040\n\n\n"
+		(exclude_from_sim no)
+		(at 25.4 59.69 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f3b6c17-3667-441b-afc4-37069687fc9c")
+	)
+	(text "Specs:\n\n"
+		(exclude_from_sim no)
+		(at 20.32 26.035 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "55cad655-22b2-44c8-b9f8-9f512ae72584")
+	)
+	(text "W25Q16JVUXIQ Datasheet p6 -> Use a 100nF and 1uF capacitor\nRPI Pico Schematic -> Use a 100nF and 2uF decoupling capacitors. A pull up resistor is not fitted\nHardware design with rp2040 p9 -> Use a 100nF decoupling capacitor. Pull up resistor is not fitted, the flash can work without it. \nI will only place the 100nF capacitor, since the devboard can work according to Hardware design guide. I will not place a pull up resitor\n"
+		(exclude_from_sim no)
+		(at 33.655 137.16 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d3a2c25-ef00-463f-a8f9-097d65411ee9")
+	)
+	(text "USB C\n\n"
+		(exclude_from_sim no)
+		(at 23.495 100.965 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "84073607-759e-4c76-94e2-c79ef709b098")
+	)
+	(text "XC6206_Torex Datasheet p6 -> Two 1 uF ceramic capacitors on Vin and Vout"
+		(exclude_from_sim no)
+		(at 31.75 149.86 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "98e1203e-a396-4322-b1c0-b0001b787690")
+	)
+	(text "Input Voltage: 5.5V-9V(External Source 5V) or 5V (USB). ONLY USE ONE VOLTAGE INPUT AT A TIME\nMaximum Output Current at 5V input : 200 mA at 3.3V output\nNo Polarity Protection (External Source)\nOvercurrent Protection: None "
+		(exclude_from_sim no)
+		(at 24.13 36.195 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "acd748fd-d1dd-4d58-b0de-d714ef4528b8")
+	)
+	(text "References:\n\n\n"
+		(exclude_from_sim no)
+		(at 18.415 55.88 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c56b2841-0edb-41c3-95b2-30bacff9f3f9")
+	)
+	(text "GPIO23 is not exposed or used. Since the voltage regulator used (XC6206...) doesn't have a Power Select mode\nGPIO29_ADC which is used for monitoring VSys (external battery) is not exposed or used in order to save costs\nIn the Raspberry Pi Pico Schematic, 2uF capacitors are used for decoupling. I use 1uF decoupling capacitors as indicated in the rp2040 datasheet\nADC_AVDD is powered only by 3.3V, no option for external Analog powering. This will be more noisy for projects where ADC is used. \nADC_AVDD But in order to save space and cost. I will skip the option to power it externally"
+		(exclude_from_sim no)
+		(at 31.75 173.355 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9e71455-e66f-4568-9c32-e6180a298ded")
+	)
+	(text "USB needs 90 Ohm differential traces. \nAccording to JLCPCB impedance calculator, with a JLC7628 prepreg and 6mil (0.15mm) space between lines\nI have to use 9 mil tracks -> 0.2mm. With a ground layer below\nI have to place vias because of the pinout of USB C. Some other people have placed vias without problems for signal integrity\n"
+		(exclude_from_sim no)
+		(at 34.29 114.935 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e95e934b-68c0-4092-8771-0be5b400c7f8")
+	)
+	(text "RPI Pico Schematic\nHardware design with rp2040 p10 -> 12MHz crystal with 27 pF Capacitors \nrp2040 datasheet p13 -> USB_DP and USB_DM need 27 Ohm Resistors\nrp2040 datasheet p13 -> Use a 12MHz Crystal\nrp2040 datasheet p13 -> TESTEN to GND\nrp2040 datasheet p155 -> USB_VDD connected to 3.3V and decoupled with a 100 nF capacitor\nrp2040 datasheet p155 -> IOVDD connected to 3.3V and decoupled with a 100 nF capacitor per pin (6pins)\nrp2040 datasheet p155 -> DVDD connected to VREG_VOUT = 1.1V and decoupled with a 100 nF capacitor per pin (2pins)\nrp2040 datasheet p156 -> ADC_AVDD connected to 3.3V and decoupled with a 100 nF capacitor. A better circuit (Pico Schematic) can be made when ADC is crucial\nrp2040 datasheet p160 -> VREG_VIN Internal 1.1V Voltage regulator Input. Connect to external 3.3V and decouple with 1uF\nrp2040 datasheet p160 -> VREG_VOUT Internal 1.1V Voltage regulator Output. Connect to 1.1V and decouple with 1uF\n"
+		(exclude_from_sim no)
+		(at 32.385 88.265 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "edc993d0-2280-4c65-9107-5c873f2c5a57")
+	)
+)

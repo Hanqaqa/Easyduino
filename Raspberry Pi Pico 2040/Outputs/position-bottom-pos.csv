@@ -1,0 +1,6 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"J3","Conn_01x20","PinHeader_1x20_P2.54mm_Vertical",135.534000,-74.819000,180.000000,bottom
+"J4","Conn_01x20","PinHeader_1x20_P2.54mm_Vertical",153.441000,-74.819000,180.000000,bottom
+"TP5","~","TestPoint_pad",145.100000,-107.300000,180.000000,bottom
+"TP6","~","TestPoint_pad",146.450000,-107.300000,180.000000,bottom
+"TP7","~","TestPoint_pad",147.250000,-107.300000,180.000000,bottom
