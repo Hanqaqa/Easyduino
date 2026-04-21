@@ -69,7 +69,7 @@ KiCad Schematic symbols, footprints and 3D Models were obtained from their [KiCa
 - CP2102 datasheet p15 -> ESD Supression Diode for all three inputs of USB  
 - CP2102 datasheet p15 and p19 -> 100nF for VDD output, 4.7 uF is optional for higher current circuits.
 - CP2102 datasheet p23 -> The VDD or 3.3 output can only provide 100mA. I will not use this as a voltage provider for the ciruit. I will use the AMS1117-3.3 
-- CP2102 datasheet p15 -> RST and SUSPEND resistors are not present. Might produce bad results due to noise
+- CP2102 datasheet p15 -> RST pulled up via 4.7k and SUSPEND~ pulled down via 10k.
 
 #### AMS1117-3.3V
 

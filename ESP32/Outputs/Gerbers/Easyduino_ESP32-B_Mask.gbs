@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.0*%
-%TF.CreationDate,2026-04-10T18:52:41+02:00*%
+%TF.CreationDate,2026-04-21T19:31:45+02:00*%
 %TF.ProjectId,Easyduino_ESP32,45617379-6475-4696-9e6f-5f4553503332,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX45Y45*%
 G04 Gerber Fmt 4.5, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.0) date 2026-04-10 18:52:41*
+G04 Created by KiCad (PCBNEW 10.0.0) date 2026-04-21 19:31:45*
 %MOMM*%
 %LPD*%
 G01*
