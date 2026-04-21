@@ -62,7 +62,7 @@ If you plan on developing any other development boards and wish to merge into th
 To do list:
 
 - [ ] Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up).
-- [ ] Investigate why ESP32S3 USB doesn't work but the UART USB does.
+- [ ] Fix ESP32 and ESP32S3 flash and reset bugs: The EN button has to be pressed to flash and reset. RST~ pin on CP2102 has to be pulled up via 4.7k resistor (It was pulled down (ESP32) and not connected (ESP32S3) by mistake) and the SUSPEND~ pin has to be pulled down via 4.7K resistor (it was left unconnected). 
 - [ ] Investigate and think about a popular NXP devboard to implement.
 - [ ] Investigate other possible microcontrollers/SOCs to implement.
 
