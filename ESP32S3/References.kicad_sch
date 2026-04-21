@@ -120,7 +120,7 @@
 		)
 		(uuid "a7f89aed-3bd0-4814-879d-260fd12b44fa")
 	)
-	(text "CP2102 datasheet p15 -> VBUS will be tied to REGIN. 1uF and 100 nF will be added.\nCP2102 datasheet p15 -> ESD Supression Diode I will be skipping it  \nCP2102 datasheet p15 and p19 -> 100nF for VDD output, 4.7 uF is optional for higher current circuits.\nCP2102 datasheet p23 -> The VDD or 3.3 output can only provide 100mA. I will not use this as a voltage provider for the ciruit. I will use the AMS1117-3.3 \nCP2102 datasheet p15 -> RST and SUSPEND resistors are not present. Might produce bad results due to noise"
+	(text "CP2102 datasheet p15 -> VBUS will be tied to REGIN. 1uF and 100 nF will be added.\nCP2102 datasheet p15 -> ESD Supression Diode I will be skipping it  \nCP2102 datasheet p15 and p19 -> 100nF for VDD output, 4.7 uF is optional for higher current circuits.\nCP2102 datasheet p23 -> The VDD or 3.3 output can only provide 100mA. I will not use this as a voltage provider for the ciruit. I will use the AMS1117-3.3 \nCP2102 datasheet p15 -> RST pulled up via 4.7k and SUSPEND~ pulled down via 10k."
 		(exclude_from_sim no)
 		(at 38.735 150.495 0)
 		(effects

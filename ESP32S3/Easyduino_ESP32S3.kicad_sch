@@ -4520,142 +4520,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_names
@@ -4883,6 +4747,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VBUS"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 65.405 123.825)
@@ -5078,7 +5081,7 @@
 		(uuid "fd9f1e8e-ba69-4f55-ab02-bd6747651294")
 	)
 	(junction
-		(at 92.71 33.02)
+		(at 88.9 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "064670cf-d87f-41bd-9a6f-07db60e97cbc")
@@ -5120,19 +5123,19 @@
 		(uuid "7cbe4a22-3951-4d1e-98ab-e750afca4fc0")
 	)
 	(junction
-		(at 81.28 33.02)
+		(at 77.47 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87090d31-9b20-41bd-a47c-24a97afc1168")
 	)
 	(junction
-		(at 86.36 33.02)
+		(at 82.55 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b711c93-7760-42d0-bdcb-d13192f0cc44")
 	)
 	(junction
-		(at 86.36 40.64)
+		(at 82.55 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f76c725-0a09-4e66-b14a-b871fdc97f02")
@@ -5192,6 +5195,12 @@
 		(uuid "fcfeaa22-9a56-4b77-ac1d-b567c82d1219")
 	)
 	(junction
+		(at 93.98 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe95fc71-f21b-41d2-9e08-c25650bbf759")
+	)
+	(junction
 		(at 266.7 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5226,10 +5235,6 @@
 		(uuid "5d0d043c-424b-4f9f-abfe-9daffbf5752a")
 	)
 	(no_connect
-		(at 95.25 43.18)
-		(uuid "685b4d9d-4fd2-4297-9817-9d66efd4e9ee")
-	)
-	(no_connect
 		(at 120.65 53.34)
 		(uuid "6a2c27cb-f9f9-4325-8731-495b0b363548")
 	)
@@ -5244,10 +5249,6 @@
 	(no_connect
 		(at 120.65 81.28)
 		(uuid "82497aa7-7ad0-4398-8470-9d6a7bca6e2e")
-	)
-	(no_connect
-		(at 120.65 68.58)
-		(uuid "8fa770f4-9270-4b7a-8a12-d691ec260913")
 	)
 	(no_connect
 		(at 120.65 83.82)
@@ -5300,6 +5301,16 @@
 			(type default)
 		)
 		(uuid "01583a20-d3c7-4d35-98a7-db024af5ef96")
+	)
+	(wire
+		(pts
+			(xy 129.54 71.12) (xy 129.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "039c6d15-163a-4990-86f8-530bc91efb3a")
 	)
 	(wire
 		(pts
@@ -5383,7 +5394,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 40.64) (xy 92.71 40.64)
+			(xy 82.55 40.64) (xy 88.9 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5683,7 +5694,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 31.75) (xy 81.28 33.02)
+			(xy 77.47 31.75) (xy 77.47 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5853,7 +5864,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 33.02) (xy 81.28 55.88)
+			(xy 77.47 33.02) (xy 77.47 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5933,7 +5944,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 33.02) (xy 92.71 33.02)
+			(xy 88.9 33.02) (xy 93.98 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6363,13 +6374,23 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 40.64) (xy 86.36 45.72)
+			(xy 82.55 40.64) (xy 82.55 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9265126a-20cf-4961-81ca-a4b27003a623")
+	)
+	(wire
+		(pts
+			(xy 93.98 41.91) (xy 93.98 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93ae6dee-a584-40a7-b110-ca166feb363f")
 	)
 	(wire
 		(pts
@@ -6443,7 +6464,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 33.02) (xy 92.71 33.02)
+			(xy 82.55 33.02) (xy 88.9 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6510,6 +6531,16 @@
 			(type default)
 		)
 		(uuid "9dcf0024-9db9-4ae4-8713-3bb4d9789f53")
+	)
+	(wire
+		(pts
+			(xy 93.98 33.02) (xy 105.41 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddcc2fa-4a77-49fc-b05b-173147fde662")
 	)
 	(wire
 		(pts
@@ -6713,6 +6744,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 43.18) (xy 95.25 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b366cfa5-55b3-48d3-84a6-d1b31551f755")
+	)
+	(wire
+		(pts
 			(xy 72.39 161.29) (xy 81.28 161.29)
 		)
 		(stroke
@@ -6740,6 +6781,16 @@
 			(type default)
 		)
 		(uuid "b45bb977-2503-4ea4-a23f-5fcd19b79109")
+	)
+	(wire
+		(pts
+			(xy 93.98 33.02) (xy 93.98 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b57edae4-6e2a-4579-9901-3df6ba11276f")
 	)
 	(wire
 		(pts
@@ -6773,7 +6824,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 33.02) (xy 86.36 33.02)
+			(xy 77.47 33.02) (xy 82.55 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6873,6 +6924,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 184.15) (xy 81.28 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c0fb81-7fae-4179-a5fe-2609cf68046a")
+	)
+	(wire
+		(pts
 			(xy 73.66 46.99) (xy 73.66 52.07)
 		)
 		(stroke
@@ -6913,6 +6974,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 78.74) (xy 129.54 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcb9362-55eb-4332-9ee9-321a5cfd6e85")
+	)
+	(wire
+		(pts
 			(xy 72.39 181.61) (xy 81.28 181.61)
 		)
 		(stroke
@@ -6950,6 +7021,16 @@
 			(type default)
 		)
 		(uuid "d11fac60-dcd2-4ade-b83b-8c4ec63ba1b4")
+	)
+	(wire
+		(pts
+			(xy 120.65 68.58) (xy 129.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c631a8-7121-4dc8-a6e4-e20296bc01ac")
 	)
 	(wire
 		(pts
@@ -7043,7 +7124,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 55.88) (xy 81.28 55.88)
+			(xy 95.25 55.88) (xy 77.47 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7303,7 +7384,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 184.15) (xy 69.85 182.88)
+			(xy 68.58 184.15) (xy 68.58 182.88)
 		)
 		(stroke
 			(width 0)
@@ -7340,16 +7421,6 @@
 			(type default)
 		)
 		(uuid "fc590f9c-f617-47e4-90e8-caeb13959013")
-	)
-	(wire
-		(pts
-			(xy 69.85 184.15) (xy 81.28 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd678fd3-1e6d-41ec-b831-bab3280ab8ff")
 	)
 	(wire
 		(pts
@@ -7651,6 +7722,16 @@
 		)
 		(uuid "3bfad130-377b-4a83-b061-24304d57394b")
 	)
+	(label "~{RST}"
+		(at 93.98 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ee4c300-012c-4d67-aca4-801cc76030a3")
+	)
 	(label "GPIO47"
 		(at 140.97 173.99 180)
 		(effects
@@ -7800,6 +7881,16 @@
 			(justify left bottom)
 		)
 		(uuid "68d38639-0eff-4686-9e52-47ae04540cac")
+	)
+	(label "~{SUSPEND}"
+		(at 123.19 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71853303-159a-43ff-babd-eb0bdc3b6deb")
 	)
 	(label "USB2_D-"
 		(at 140.97 181.61 180)
@@ -8897,88 +8988,6 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 69.85 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0ef3afbf-bc23-47c4-a1e5-8f0430eb7f1d")
-		(property "Reference" "#PWR026"
-			(at 69.85 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 69.215 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 182.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "38341c61-dec8-4f77-bb19-421e4c23e936")
-		)
-		(instances
-			(project "Easyduino_ESP32S3"
-				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -10170,7 +10179,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "power:VBUS")
 		(at 149.86 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -10180,8 +10189,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f573baf-b44d-4061-894f-bc9c1d2a7c47")
-		(property "Reference" "#PWR033"
+		(uuid "448f0bd2-5eb2-4bf3-8c25-74803b67f46e")
+		(property "Reference" "#PWR044"
 			(at 149.86 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10192,8 +10201,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 149.86 140.97 0)
+		(property "Value" "VBUS"
+			(at 149.86 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10224,8 +10233,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 149.86 144.78 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10235,18 +10245,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "504d4305-137c-40c6-9e4b-0a847168a77d")
+			(uuid "7efe7eab-d6b6-4a83-8b78-72cf92993b9b")
 		)
 		(instances
 			(project "Easyduino_ESP32S3"
 				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -10344,6 +10348,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 129.54 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48bb9235-3f63-4906-9d0f-ad2e9b38c8f7")
+		(property "Reference" "#PWR026"
+			(at 129.54 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8b34531-8e55-4d98-b8d5-1b5130704854")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 201.93 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -10420,6 +10501,84 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 73.66 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c014e94-91be-45df-b06d-a5896d20f988")
+		(property "Reference" "#PWR039"
+			(at 73.66 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 73.66 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 73.66 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17499c37-8e6e-4b19-bcb9-339a3da1067c")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -10598,89 +10757,6 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 73.66 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "563146b7-a136-4978-9d52-7dcc570643f0")
-		(property "Reference" "#PWR028"
-			(at 73.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 73.66 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e143be20-4b4a-4fd6-a8a7-3f20e1ef6fc7")
-		)
-		(instances
-			(project "Easyduino_ESP32S3"
-				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -11611,6 +11687,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 68.58 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "707e4e61-de64-4578-8f96-27285f6e5298")
+		(property "Reference" "#PWR043"
+			(at 68.58 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 68.58 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 68.58 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0600e61-4217-412e-bb1b-78ed06a90362")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 195.58 148.59 180)
 		(unit 1)
@@ -11703,89 +11857,6 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "716191fa-c3b2-4b22-b3e9-b310296b3f99")
-		(property "Reference" "#PWR027"
-			(at 81.28 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 81.28 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65d27483-9d9a-4c1d-82f0-dc0f9a4b6bd6")
-		)
-		(instances
-			(project "Easyduino_ESP32S3"
-				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -11984,6 +12055,84 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 73.66 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b667ea1-be09-4327-a9ed-a50e4d29189a")
+		(property "Reference" "#PWR041"
+			(at 73.66 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 73.66 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 73.66 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b2f61bb-dea1-430a-a5da-020a0aecd261")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -12238,6 +12387,84 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 77.47 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89b939d4-12ca-41bc-a8b3-28fcc473c97d")
+		(property "Reference" "#PWR040"
+			(at 77.47 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 77.47 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 77.47 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ce2f374-f3ef-46d5-bc93-5c1b12ce79e5")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -12655,7 +12882,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 45.72 0)
+		(at 82.55 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12666,7 +12893,7 @@
 		(fields_autoplaced yes)
 		(uuid "96a2d77c-9c92-4550-b2b0-be680dcd6045")
 		(property "Reference" "#PWR05"
-			(at 86.36 52.07 0)
+			(at 82.55 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12677,7 +12904,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 50.8 0)
+			(at 82.55 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12687,7 +12914,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 45.72 0)
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12698,7 +12925,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 45.72 0)
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12709,7 +12936,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 45.72 0)
+			(at 82.55 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12744,7 +12971,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 92.71 36.83 0)
+		(at 88.9 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12754,7 +12981,7 @@
 		(dnp no)
 		(uuid "96be12e0-f4db-474a-b8b5-d3996057e566")
 		(property "Reference" "C2"
-			(at 91.44 27.305 0)
+			(at 87.63 27.305 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12765,7 +12992,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 91.44 29.845 0)
+			(at 87.63 29.845 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12776,7 +13003,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 93.6752 40.64 0)
+			(at 89.8652 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12787,7 +13014,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 36.83 0)
+			(at 88.9 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12798,7 +13025,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 36.83 0)
+			(at 88.9 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12808,7 +13035,7 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 92.71 36.83 0)
+			(at 88.9 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13256,6 +13483,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 25.4 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b453e28c-1472-4fc4-8d62-8b7e2939b28e")
+		(property "Reference" "#PWR042"
+			(at 25.4 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 25.4 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 25.4 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab502aa6-e2fc-43f3-b0dc-099fe7f29f2a")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 19.05 160.02 0)
 		(unit 1)
@@ -13277,8 +13582,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 19.05 156.21 0)
+		(property "Value" "VBUS"
+			(at 19.05 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13512,89 +13817,6 @@
 			(project "Easyduino_ESP32"
 				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 25.4 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c10cbefc-f965-471b-ae6d-5d43533b8f8f")
-		(property "Reference" "#PWR03"
-			(at 25.4 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 25.4 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "176517a3-6873-42d2-a84a-a00eca4be124")
-		)
-		(instances
-			(project "Easyduino_ESP32S3"
-				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -14516,8 +14738,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 73.66 38.1 0)
+		(lib_id "Device:R")
+		(at 129.54 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14525,11 +14747,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e232d63e-2648-47e9-b6e8-abdda4ba049f")
-		(property "Reference" "#PWR034"
-			(at 73.66 41.91 0)
-			(hide yes)
+		(uuid "df7cb916-1e63-4482-b60d-c9220a222451")
+		(property "Reference" "R10"
+			(at 134.366 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14538,8 +14758,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 73.66 34.29 0)
+		(property "Value" "10k"
+			(at 134.112 76.708 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14548,8 +14768,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 73.66 38.1 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 127.762 74.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14560,7 +14780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 38.1 0)
+			(at 129.54 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14571,7 +14791,18 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.66 38.1 0)
+			(at 129.54 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 129.54 74.93 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14581,18 +14812,104 @@
 			)
 		)
 		(pin "1"
-			(uuid "c782022c-3c69-4b05-9927-85149cf1ed37")
+			(uuid "fdacfeff-e707-42a3-ba12-7342e7e7e306")
+		)
+		(pin "2"
+			(uuid "da03516d-fd6e-48f9-90e7-4ae3ae31ab8d")
 		)
 		(instances
 			(project "Easyduino_ESP32S3"
 				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
-					(reference "#PWR034")
+					(reference "R10")
 					(unit 1)
 				)
 			)
-			(project "Easyduino_ESP32"
-				(path "/d8f11b80-b276-4c5a-b092-c97b730d081e"
-					(reference "#PWR020")
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 38.1 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e613b361-6649-4676-bf45-311f910aa07a")
+		(property "Reference" "R11"
+			(at 96.52 27.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 96.774 29.972 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 95.758 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25905"
+			(at 93.98 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6056b768-d613-4ea6-9220-43053cc9d0b5")
+		)
+		(pin "2"
+			(uuid "5ff9ec06-e252-4254-9546-3bd30f175855")
+		)
+		(instances
+			(project "Easyduino_ESP32S3"
+				(path "/28fbeea4-e0b6-405b-9817-1706e1a07761"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -14682,7 +14999,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 86.36 36.83 0)
+		(at 82.55 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14692,7 +15009,7 @@
 		(dnp no)
 		(uuid "e910a4a4-2979-4618-b5b3-7a21c90d204e")
 		(property "Reference" "C1"
-			(at 84.455 27.305 0)
+			(at 80.645 27.305 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14703,7 +15020,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 85.09 29.845 0)
+			(at 81.28 29.845 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14714,7 +15031,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 87.3252 40.64 0)
+			(at 83.5152 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14725,7 +15042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 36.83 0)
+			(at 82.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14736,7 +15053,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 36.83 0)
+			(at 82.55 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14746,7 +15063,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 86.36 36.83 0)
+			(at 82.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
