@@ -33,7 +33,7 @@ Each project consists of:
 - Main KiCad files (.kicad_pro, .kicad_sch...)
 - A readme explaining the specifics of that project
 - xxx.pretty or xxxlibraries folder which contains the non standard footprints or schematic parts used in the project (Some projects such as the Arduino UNO only use standard libraries, therefore these folders don't exist)
-- The **Outputs** folder: All the data produced by the KiCad Jobset like Gerbers, PDFs, ERC, BOM, CPLs...
+- The **Outputs** folder: All the data produced by the KiCad Jobset like Gerbers, STEPs, PDFs, ERC, BOM, CPLs...
 - The ***ProductionFiles*** folder which includes files such as:
     - BOM: This folder contains both the list of components and the Centroid File in JLCPB readable format
     - ***Datasheets***: all the datasheets of the main components used in the project. Datasheets of easily replaceable components such as Resistors, Capacitors and LEDs are not given
@@ -61,9 +61,9 @@ If you plan on developing any other development boards and wish to merge into th
 
 To do list:
 
-- [ ] Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up).
-- [ ] Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102). 
-- [ ] Investigate and think about a popular NXP devboard to implement.
+- [ ] ~~Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up).~~ Ordered. Awaiting arrival.
+- [ ] ~~Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102).~~ Ordered. Awaiting arrival. 
+- [ ] Start developing a nRF52840 Dongle and RP2350A.
 - [ ] Investigate other possible microcontrollers/SOCs to implement.
 
 ## Acknowledgments
