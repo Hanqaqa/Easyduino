@@ -239,15 +239,15 @@
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "model",
+        "output_filename": "EasyduinoESP32.step",
         "overwrite": false,
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
         "use_grid_origin": false,
         "use_pcb_center_origin": true,
-        "user_origin.x": 144.5,
-        "user_origin.y": 99.0,
+        "user_origin.x": 145.80368,
+        "user_origin.y": 93.40272,
         "vrml_model_dir": "",
         "vrml_relative_paths": false
       },
@@ -267,7 +267,8 @@
         "0815bb31-6c57-4131-b266-5227da1748d0",
         "54d50e13-5d48-41bb-ae89-ec0d230755d6",
         "4cf41f85-cb94-4679-9e97-18a6bcf29c6b",
-        "1d63d601-22e5-4016-a72d-604a290c716d"
+        "1d63d601-22e5-4016-a72d-604a290c716d",
+        "c39dcb22-fe9b-4c9a-ac2a-9bd2aeca0049"
       ],
       "settings": {
         "output_path": "${KIPRJMOD}\\Outputs\\"
