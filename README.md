@@ -33,9 +33,9 @@ Each project consists of:
 - Main KiCad files (.kicad_pro, .kicad_sch...)
 - A readme explaining the specifics of that project
 - xxx.pretty or xxxlibraries folder which contains the non standard footprints or schematic parts used in the project (Some projects such as the Arduino UNO only use standard libraries, therefore these folders don't exist)
-- The **Outputs** folder: All the data produced by the KiCad Jobset like Gerbers, STEPs, PDFs, ERC, BOM, CPLs...
+- The **Outputs** folder: Contains all the data produced by the KiCad Jobset like Gerbers, STEPs, PDFs, ERC, BOM, CPLs... Most of these are then copied, organized, and placed into their respective `ProductionFiles` folders.
 - The ***ProductionFiles*** folder which includes files such as:
-    - BOM: This folder contains both the list of components and the Centroid File in JLCPB readable format
+    - BOM: This folder contains both the list of components and the Centroid File in JLCPCB readable format. The CPL .csv file needs a small tweak at the beginning of the file in order to be readable. I mention it [here](https://github.com/Hanqaqa/Easyduino/tree/master/Assets/JLCPCB%20Constraints#cpl-component-placement-list).
     - ***Datasheets***: all the datasheets of the main components used in the project. Datasheets of easily replaceable components such as Resistors, Capacitors and LEDs are not given
     - Gerbers: A zip file with all of the manufacturing gerber files such as Copper/Mask/Silkscreen layers
     - PDFs: PDF and PNG files of the Schematic and PCB
