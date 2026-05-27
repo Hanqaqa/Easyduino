@@ -19,6 +19,10 @@ The project was born out of the necessity to unify the wide variety of software,
 ---|---|---|
 [<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/ESP32S3.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/ESP32S3) | [<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/Raspberry.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/Raspberry%20Pi%20Pico%202040) | [<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/STM32F103.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/STM32F103%20Bluepill)
 
+[Easyduino Pi Pico 2](https://github.com/Hanqaqa/Easyduino/tree/master/PiPico2) | [Easyduino Pi Pico 2 2354B](https://github.com/Hanqaqa/Easyduino/tree/master/PiPico22354B) | [Easyduino nrf52840 dongle](https://github.com/Hanqaqa/Easyduino/tree/master/nrf52840dongle)
+---|---|---|
+[<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/InProgress.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/PiPico2) | [<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/InProgress.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/PiPico22354B) | [<img src="https://github.com/Hanqaqa/Easyduino/blob/master/Assets/Miniatures/InProgress.jpg">](https://github.com/Hanqaqa/Easyduino/tree/master/nrf52840dongle)
+
 The outline, pinout, layout and components have been tried to be replicated with respect to the originals, in all of the boards. With various levels of success. 
 
 Some boards, like the Raspberry Pi Pico use 01005 components which are too expensive for the manufacturer to integrate in the PCB Aseembly line. Some other components like the original Arduino UNO USB to Serial converter, an Atmega16u2, were hard to come by during the development of this project ~January 2023, so more readily available options were chosen. All the differences with the original boards are explained inside the folder of each project in a readme file. 
@@ -61,8 +65,8 @@ If you plan on developing any other development boards and wish to merge into th
 
 To do list:
 
-- [ ] ~~Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up).~~ Ordered. Awaiting arrival.
-- [ ] ~~Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102).~~ Ordered. Awaiting arrival. 
+- [ ] ~~Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up). Ordered. Awaiting arrival.~~ v1.1 is working correctly. Need to update photos and repo.
+- [ ] ~~Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102). Ordered. Awaiting arrival.~~ TX and RX were mixed reorder v1.2
 - [ ] Start developing a nRF52840 Dongle and RP2350A.
 - [ ] Investigate other possible microcontrollers/SOCs to implement.
 
