@@ -26,8 +26,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "H4","MountingHole","MountingHole_2.2mm_M2",150.590000,-122.200000,0.000000,top
 "J1","USB_C_Receptacle_USB2.0","USB_C_Receptacle_G-Switch_GT-USB-7010ASV",144.680000,-76.875000,180.000000,top
 "J5","Conn_01x03","PinHeader_1x03_P2.54mm_Vertical",141.920000,-123.079000,90.000000,top
-"J6","Conn_01x03_MountingPin","JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical",144.500000,-118.300000,180.000000,top
-"J7","Conn_01x01_Pin","PinHeader_1x01_P2.54mm_Vertical",142.700000,-85.800000,0.000000,top
+"J6","Conn_01x03_MountingPin","JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical",144.500000,-118.200000,0.000000,top
 "R1","5.1k","R_0402_1005Metric",146.150000,-82.900000,-90.000000,top
 "R2","5.1k","R_0402_1005Metric",142.950000,-82.900000,-90.000000,top
 "R3","5.1k","R_0402_1005Metric",150.140000,-94.840000,90.000000,top

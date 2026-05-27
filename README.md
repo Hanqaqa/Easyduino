@@ -65,14 +65,14 @@ If you plan on developing any other development boards and wish to merge into th
 
 To do list:
 
-- [ ] ~~Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up). Ordered. Awaiting arrival.~~ v1.1 is working correctly. Need to update photos and repo.
-- [ ] ~~Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102). Ordered. Awaiting arrival.~~ TX and RX were mixed reorder v1.2
-- [ ] Start developing a nRF52840 Dongle and RP2350A.
-- [ ] Investigate other possible microcontrollers/SOCs to implement.
+- [ ] ~~Order and test the v1.1 RP2040 board. (In v1.0 I mixed some pins in the Flash and couldn't boot up). Ordered. Awaiting arrival. v1.1 is working correctly. Need to update photos and repo.~~ Order v1.2 with Silkscreen text for BOOTSEL and RESET. Once received test and make photos.
+- [ ] ~~Order and test the v1.1 ESP32S3 board. (In v1.0 I forgot to add PullUp and PullDown in RST and SUSPEND CP2102). Ordered. Awaiting arrival.~~ TX and RX signals going into CP2102 were mixed. Fix it and order v1.2. Once received test and make photos.
+- [ ] Developing: nRF52840 Dongle, RP2350A (Pi Pico 2), and Pi Pico 2 2354B with extra functionalities
+- [ ] Investigate other possible microcontrollers/SOCs/FPGAs to implement.
 
 ## Acknowledgments
 
-Thanks to [winsrrow](https://github.com/winsrrow) for providing KiCad tips and designing from the ground up the v1.1 RP2040 board.
+Thanks to [winsrrow](https://github.com/winsrrow) for providing lots of KiCad tips and designing from the ground up the v1.1 RP2040 board.
 
 ## Licensing
 

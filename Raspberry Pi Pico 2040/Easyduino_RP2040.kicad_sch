@@ -5,146 +5,6 @@
 	(uuid "9eec604e-4498-4c8d-831f-8e3bb6ce48eb")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Pin"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x01_Pin_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
 			(pin_names
 				(offset 1.016)
@@ -6064,6 +5924,19 @@
 		)
 		(uuid "8559a142-56d2-4d95-bde7-674987713e37")
 	)
+	(text "BootSel"
+		(exclude_from_sim no)
+		(at 23.622 215.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "85fbe104-13bc-4c3d-9672-aa7107833872")
+	)
 	(text "Both 1uF caps close to the regulator"
 		(exclude_from_sim no)
 		(at 105.41 33.02 0)
@@ -6157,6 +6030,19 @@
 			(justify left)
 		)
 		(uuid "e5c744fb-18d3-4802-b5dd-fc87fc34cf06")
+	)
+	(text "Reset"
+		(exclude_from_sim no)
+		(at 48.514 215.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea40440d-6bde-4db2-bad1-693b382a5ad5")
 	)
 	(text "USB"
 		(exclude_from_sim no)
@@ -8663,7 +8549,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 243.84) (xy 50.8 243.84)
+			(xy 59.69 243.84) (xy 50.8 243.84)
 		)
 		(stroke
 			(width 0)
@@ -10393,17 +10279,17 @@
 		(uuid "8be3fdb3-37e3-4c90-a41d-18339e11fae5")
 	)
 	(label "RUN"
-		(at 52.07 243.84 0)
+		(at 59.69 243.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "8da2fe6c-96e4-46ba-8226-22da19e26348")
 		(property "Sheet References" ""
-			(at 52.07 245.11 0)
+			(at 59.69 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10411,7 +10297,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -10424,29 +10310,6 @@
 			(justify right bottom)
 		)
 		(uuid "90f78daa-d9f5-4092-b568-b629f0960d5c")
-	)
-	(label "SWD"
-		(at 148.59 180.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "936cbcb1-5829-469e-bfb2-58ba1c04eda9")
-		(property "Sheet References" ""
-			(at 148.59 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(label "GPIO12"
 		(at 342.9 91.44 180)
@@ -10812,29 +10675,6 @@
 		)
 		(uuid "d3711d4f-b0e2-4da0-9de1-80ae6f266204")
 	)
-	(label "SWCLK"
-		(at 148.59 185.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d3dc5e8f-96db-4568-9e76-cdd1a31f9d37")
-		(property "Sheet References" ""
-			(at 148.59 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(label "GPIO11"
 		(at 342.9 88.9 180)
 		(effects
@@ -10844,6 +10684,16 @@
 			(justify right bottom)
 		)
 		(uuid "d9e71535-909c-4168-8937-0b3b876e9479")
+	)
+	(label "SWD"
+		(at 148.59 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "de2f1a6b-24f4-4f98-910a-83b6966f1e89")
 	)
 	(label "GPIO21"
 		(at 342.9 114.3 180)
@@ -10956,6 +10806,16 @@
 				(justify left)
 			)
 		)
+	)
+	(label "SWCLK"
+		(at 148.59 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8dab52b-c5c2-4745-87b9-97a6cc954862")
 	)
 	(label "GPIO0"
 		(at 342.9 60.96 180)
@@ -11906,83 +11766,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 62.23 243.84 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "05f6b3ab-8621-4d34-8e88-64e28d5ec4b2")
-		(property "Reference" "J7"
-			(at 58.166 240.538 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 61.595 246.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 62.23 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 62.23 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb0419cf-00df-4ee7-bb35-412ec23fe48b")
-		)
-		(instances
-			(project "Easyduino_RP2040"
-				(path "/9eec604e-4498-4c8d-831f-8e3bb6ce48eb"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 260.35 116.84 90)
 		(unit 1)
@@ -12610,7 +12393,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -18058,7 +17841,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -18683,7 +18466,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)

@@ -1,12 +1,12 @@
-# Raspberry Pi Pico RP2040 v1.1 IN PROGRESS.
+# Raspberry Pi Pico RP2040 v1.2 IN PROGRESS.
 
-The new and easy to use Microcontroller from the Raspberry Foundation
+The new and easy to use Microcontroller from the Raspberry Pi Foundation. Now with a Reset button. Connect via USB, hold BOOTSEL (BT), press and release RESET(RST), then release BOOTSEL. You are now in Bootloader mode.
 
 <p align="center">
     <img src="https://github.com/Hanqaqa/Easyduino/blob/master/Raspberry%20Pi%20Pico%202040/ProductionFiles/Photos/Easyduino%20RP2040%20Iso.jpg" width="60%">
 </p>
 
-**The pictured version is v1.0 which had some pins mixed up in the flash memory and couldn't boot up. The project contains the v1.1 which corrects that mistake, adds a debug port and some test points. The photo will be updated when I receive and test the new board.**
+**The pictured version is v1.0 which had some pins mixed up in the flash memory and couldn't boot up. The project contains the v1.2 which corrects that mistake, adds a debug port and some test points. The photo will be updated when I receive and test the new board.**
 **The mounting holes are not exactly in the same position as the original Pi Pico due to the size of USBC**
 
 ## Schematic
