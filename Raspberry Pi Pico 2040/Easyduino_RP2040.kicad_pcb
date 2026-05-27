@@ -13352,18 +13352,6 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "V1.1.1"
-		(at 147.11 77.17 0)
-		(layer "B.SilkS")
-		(uuid "fa7ccefc-df0e-4679-ba9f-add633c72fa9")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom mirror)
-		)
-	)
 	(gr_text "it should be 700 mils, I noticed the mistake too late.\n"
 		(at 168.6 68.4 0)
 		(layer "Dwgs.User")
