@@ -7602,6 +7602,16 @@
 		)
 		(uuid "1d861576-244c-421e-813d-93ecd53e4b5c")
 	)
+	(label "GPIO44"
+		(at 129.54 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "205ceddb-82ed-413a-8a95-f2c9faeb2f30")
+	)
 	(label "GPIO17"
 		(at 72.39 156.21 0)
 		(effects
@@ -7661,16 +7671,6 @@
 			(justify left bottom)
 		)
 		(uuid "33fe8d0e-9f5a-4364-9b78-a540ec969f28")
-	)
-	(label "GPIO43"
-		(at 129.54 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "364b3c0c-eb9d-4bd4-96e1-38113fd36e8e")
 	)
 	(label "GPIO3"
 		(at 72.39 163.83 0)
@@ -7842,7 +7842,7 @@
 		)
 		(uuid "5da7a180-73c9-42d0-bd40-f0de02e7f332")
 	)
-	(label "GPIO44"
+	(label "GPIO43"
 		(at 129.54 45.72 180)
 		(effects
 			(font

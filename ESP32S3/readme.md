@@ -1,4 +1,4 @@
-# ESP32S3 TODO: PROBLEMS COMMUNICATING VIA THE NON UART USB
+# ESP32S3 v1.2 IN PROGRESS
 
 The new and powerful microcontroller from Espressif
 
@@ -6,6 +6,7 @@ The new and powerful microcontroller from Espressif
     <img src="https://github.com/Hanqaqa/Easyduino/blob/master/ESP32S3/ProductionFiles/Photos/Easyduino%20ESP32S3%20Iso.jpg" width="60%">
 </p>
 
+**The pictured version is v1.0 which had TX/RX from the CP2102 going into the ESP32S3 module mixed up. The project contains the v1.2 which corrects that mistake. Will update the pictures once I order antoher batch and test everything works correctly.**
 
 ## Schematic
 
